@@ -1,0 +1,21 @@
+body {
+  background-color: rgba(0, 41, 128, 0.5);;
+ background-image: url("/multimedia/video/image/planting.png");
+ background-repeat:  no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+  text-align: center;
+  background-color: antiquewhite;
+  /* background-image: url("/multimedia/video/image/anime.jpg"); */
+  /* height: 150px; */
+}
+p{
+    text-align: center;
+    color: red;
+    background-color: aquamarine;
+    opacity: 0.3;
+}
