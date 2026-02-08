@@ -4,13 +4,54 @@
     <title>Linking external css</title>
     <!-- <link rel="stylesheet" type="text/css" href="/external.css"> -->
     <style>
+      img {
+  /* border-radius: 8px; */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container {
+  /* position: relative;
+  width: 50%; */
+  bottom: 0;
+   height: 100%;
+}
 
-        /* div{
+.text {
+   white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+   overflow: hidden;
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+      /* div{
              border: 1px solid black;
               background-color: lightblue;
               
         } */
-         /* .div1 {
+      /* .div1 {
   max-width: 500px;
   padding:10px;
   background-color: powderblue;
@@ -21,13 +62,13 @@
   padding:10px;
   background-color: powderblue;
 } */
-      div {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-}
+      /* div {
+        background-color: lightgrey;
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+      } */
       /* p.one {
         border-style: solid;
         border-width: 5px; */
@@ -69,7 +110,14 @@
 <br>
 
 <div class="div2">This div element has a width of 500px.</div> -->
-<div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <!-- <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> -->
 
+    <p>Use the border-radius property to create rounded images:</p>
+<div class="container">
+<img src="/multimedia/video/image/paris.jpg" alt="Paris" width="300" height="300" class="img">
+<div class="overlay"></div>
+<div class="text">Hellow world</div>
+</div>
   </body>
+
 </html>
