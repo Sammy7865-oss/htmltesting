@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html >
 <head>
-    <script>
-      function myFunctio(){
-      document.getElementById("demo").innerHTML = "learning Javascript using script tag";
-      }
-    </script>
+   
     
 </head>
 <body>
     <h2>Hellow Javascript</h2>
-    <p id="demo">JavaScript can change HTML content.</p>
+    <p id="demo"></p>
 
-<button type="button" onclick='myFunction()'>Click Me!</button>
+<!-- <button type="button" onclick="window.print()">Click Me!</button> -->
+<script >
+let x = 5;
+let y = 6;
+let z = x + y;
+document.getElementById("demo").innerHTML = "The value of x+y is " + z;
+</script>
 
 </body>
 </html>
