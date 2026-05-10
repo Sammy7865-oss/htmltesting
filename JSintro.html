@@ -10,10 +10,15 @@
 
 <!-- <button type="button" onclick="window.print()">Click Me!</button> -->
 <script >
-let x = 5;
-let y = 6;
-let z = x + y;
-document.getElementById("demo").innerHTML = "The value of x+y is " + z;
+let text = "";
+
+ let i = 0;
+while (i < 10) {
+  text += "The number is " + i + "<br>";
+  i++;
+}
+
+document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
